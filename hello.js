@@ -1,13 +1,6 @@
 exports.world = function() {
-    function print(i,intervalId) {
-    	if (i < 10) {
-    		console.log('Hello World');
-    	} else {
-    		clearInterval(intervalId)
-    	}
-    	
+    console.log('start execution');
+    for(var i=0; i<10 ; i++) {
+       console.log('Hello World');
     }
-    var i = 0;
-	var intervalId = setInterval(print,500,i++,intervalId);
-  
 }
